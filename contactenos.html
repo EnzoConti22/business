@@ -1,81 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <title>Buniness Plan System</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="estilos.css">
+    <title>Business Plan System</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-</head>
-
 <body>
+    <hr />
     <header>
         <h1>BUSINESS PLAN SYSTEM</h1>
     </header>
+    <hr />
     <nav class="menu">
         <ul class="menu-flex">
-            <li><a href="./">Inicio</a></li>
-            <li><a href="mision.html">Misión</a></li>
-            <li><a href="objetivos.html">Objetivos</a></li>
-            <li><a href="metodologia.html">Metodología</a></li>
-            <li><a href="resultados.html">Resuktados</a></li>
-            <li><a href="contactenos.html">Contáctenos</a></li>
+            <li><a href="index.html">Inicio</a></li>            
+            <li><a href="mision.html">Misión</a></li>            
+            <li><a href="objetivos.html">Objetivos</a></li>            
+            <li><a href="metodologia.html">Metodologia</a></li>            
+            <li><a href="resultados.html">Resultados</a></li>            
+            <li><a href="contactenos.html">Contactenos</a></li>            
         </ul>
     </nav>
-    <section>
-        <article>
-            <h2>Contáctenos</h2>
-            <table border="1">
-                <tr>
-                <td>NOMBRE</td>
-                <td><input type="text" name="nombre" /></td>
-            </tr>
-            <tr>
-                <td>DIRECCION</td>
-                <td><input type="text" name="direccion" /></td>
-            </tr>
-            <tr>
-                <td>TELEFONO</td>
-                <td><input type="text" name="telefono" /></td>
-            </tr>
-            <tr>
-                <td>MAIL</td>
-                <td><input type="mail" name="mail" /></td>
-            </tr>
-            <tr>
-                <td>LOCALIDAD</td>
-                <td><input type="text" name="localidad" /></td>
-            </tr>
-            <tr>
-                <td>PROVINCIA</td>
-                <td><input type="radio" name="sexo" value="masculino" />Masculino<br />
-                    <input type="radio" name="sexo" value="femenino" />Femenino<br /></td>
-            </tr>
-            <tr>
-                <td>SEXO</td>
-                <td><select name="formapago">
-                    <option>Tarjeta</option>
-                    <option>Depósito Bancario</option>
-                    <option>Rapipago / Pago Fácil</option>
-                    </select></td>
-            </tr>
-            <tr>
-                <td>FORMA DE PAGO</td>
-                <td><input type="submit" value="Enviar" />
-                    <input type="reset" value="Cancelar" /></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-            </tr></table>
-        </article>
-    </section>
-    <footer>
-        <p>Busines Plan System - Todos los derechos reservados – 2021</p>
-    </footer>
-</body>
+    <hr />
+    <section class="formulario" id="contacto">
+    </article>
+    <h2>CONTACTENOS</h2>
 
+    <form action="mailto:infobusiness">
+        <fieldset>
+            <legend>Por favor, complete el siguiente formulario</legend>
+            <table class="contenedor-campos">
+                <tr class="campo">
+                    <td>
+                        <label for="nombre">NOMBRE</label>
+                    </td>
+                    <td><input class="imput-text" type="text" id="nombre" placeholder="Ingrese su nombre "
+                            required /></td>
+                </tr>
+                <tr class="campo">
+                    <td>
+                        <label for="direccion">DIRECCION</label>
+                    </td>
+                    <td><input class="imput-text" type="text" id="direccion"
+                            placeholder="Introduzca su direccion" /></td>
+                </tr>
+                <tr class="campo">
+                    <td><label for="telefono">TELEFONO</label></td>
+                    <td><input class="imput-text" type="tel" id="telefono"
+                            placeholder="Ingrese su Numero telefonico" required />
+                    </td>
+                </tr>
+                <tr class="campo">
+                    <td><label for="mail">MAIL</label></td>
+                    <td><input class="imput-text" type="mail" id="mail" placeholder="Coloque su Mail"
+                            required /></td>
+                </tr>
+                <tr class="campo">
+                    <td><label for="localidad">LOCALIDAD</label></td>
+                    <td><input class="imput-text" type="text" id="localidad"
+                            placeholder="Ingrese su localidad" /></td>
+                </tr>
+                <tr class="campo">
+                    <td><label for="provincia">PROVINCIA</label></td>
+                    <td><input class="imput-text" type="text" id="provincia"
+                            placeholder="Introduzca la provincia en la que vive" /></td>
+                </tr>
+                <tr class="campo">
+                    <td><label for="sexo">SEXO</label></td>
+                    <td><input class="imput-text" type="radio" id="Sexo" value="masculino" />Masculino<br />
+                        <input class="imput-text" type="radio" id="Sexo" value="femenino" />Femenino<br />
+                    </td>
+                </tr>
+                <tr class="campo">
+                    <td><label for="fechadenac">FECHA DE NACIMIENTO</label></td>
+                    <td><input class="imput-text" type="date" id="fechadenac" required /></td>
+                </tr>
+                <tr class="campo">
+                    <td><label for="edad">EDAD</label></td>
+                    <td><input class="imput-text" type="number" id="edad" required min="0" /></td>
+                </tr>
+                <tr class="campo">
+                    <td><label for="formapago">FORMA DE PAGO</label></td>
+                    <td><select id="formapago">
+                            <option>Tarjeta</option>
+                            <option>Depósito Bancario</option>
+                            <option>Rapipago / Pago Fácil</option>
+                        </select></td>
+                </tr>
+                <tr class="campo">
+                    <td>
+                        <input class="boton" type="submit" value="Enviar" />
+                    </td>
+                    <td>
+                        <input class="boton" type="reset" value="Cancelar" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <article>
+</section>
+    <hr />
+    <footer>Busines Plan System - Todos los derechos reservados - 2021</footer>
+</body>
 </html>
